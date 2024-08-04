@@ -1,0 +1,22 @@
+[package]
+name = "git-notby"
+version = "0.1.0"
+edition = "2021"
+authors = ["Andrew Gazelka <andrew.gazelka@gmail.com>"]
+readme = "README.md"
+
+[dependencies]
+clap = { version = "4.5.13", features = ["derive"] }
+colored = "2.1.0"
+git2 = "0.19.0"
+walkdir = "2.5.0"
+
+[lints.clippy]
+complexity = "deny"
+
+nursery = { level = "deny", priority = -1 }
+
+pedantic = "deny"
+perf = "deny"
+style = "deny"
+suspicious = "deny"
